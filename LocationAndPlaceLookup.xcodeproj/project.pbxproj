@@ -6,17 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		614F6F4F2D88B848007D3751 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614F6F492D88B848007D3751 /* Preview Assets.xcassets */; };
+		614F6F502D88B848007D3751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614F6F4B2D88B848007D3751 /* Assets.xcassets */; };
+		614F6F512D88B848007D3751 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F4C2D88B848007D3751 /* ContentView.swift */; };
+		614F6F522D88B848007D3751 /* LocationAndPlaceLookupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F4D2D88B848007D3751 /* LocationAndPlaceLookupApp.swift */; };
+		614F6F542D88B868007D3751 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F532D88B868007D3751 /* LocationManager.swift */; };
+		614F6F572D88C29B007D3751 /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F562D88C29B007D3751 /* PlaceLookupView.swift */; };
+		614F6F592D88C5F3007D3751 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F582D88C5F3007D3751 /* Place.swift */; };
+		614F6F5B2D88C889007D3751 /* PlaceLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614F6F5A2D88C889007D3751 /* PlaceLookupViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		614F6F492D88B848007D3751 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		614F6F4B2D88B848007D3751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		614F6F4C2D88B848007D3751 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		614F6F4D2D88B848007D3751 /* LocationAndPlaceLookupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookupApp.swift; sourceTree = "<group>"; };
+		614F6F532D88B868007D3751 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		614F6F552D88C226007D3751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		614F6F562D88C29B007D3751 /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		614F6F582D88C5F3007D3751 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		614F6F5A2D88C889007D3751 /* PlaceLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupViewModel.swift; sourceTree = "<group>"; };
 		6161B30C2D847FB900E0059E /* LocationAndPlaceLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationAndPlaceLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6161B30E2D847FB900E0059E /* LocationAndPlaceLookup */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LocationAndPlaceLookup;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6161B3092D847FB900E0059E /* Frameworks */ = {
@@ -29,10 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614F6F4A2D88B848007D3751 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				614F6F492D88B848007D3751 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		614F6F4E2D88B848007D3751 /* LocationAndPlaceLookup */ = {
+			isa = PBXGroup;
+			children = (
+				614F6F552D88C226007D3751 /* Info.plist */,
+				614F6F4D2D88B848007D3751 /* LocationAndPlaceLookupApp.swift */,
+				614F6F582D88C5F3007D3751 /* Place.swift */,
+				614F6F5A2D88C889007D3751 /* PlaceLookupViewModel.swift */,
+				614F6F532D88B868007D3751 /* LocationManager.swift */,
+				614F6F4C2D88B848007D3751 /* ContentView.swift */,
+				614F6F562D88C29B007D3751 /* PlaceLookupView.swift */,
+				614F6F4B2D88B848007D3751 /* Assets.xcassets */,
+				614F6F4A2D88B848007D3751 /* Preview Content */,
+			);
+			path = LocationAndPlaceLookup;
+			sourceTree = "<group>";
+		};
 		6161B3032D847FB900E0059E = {
 			isa = PBXGroup;
 			children = (
-				6161B30E2D847FB900E0059E /* LocationAndPlaceLookup */,
+				614F6F4E2D88B848007D3751 /* LocationAndPlaceLookup */,
 				6161B30D2D847FB900E0059E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6161B30E2D847FB900E0059E /* LocationAndPlaceLookup */,
 			);
 			name = LocationAndPlaceLookup;
 			packageProductDependencies = (
@@ -109,6 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614F6F4F2D88B848007D3751 /* Preview Assets.xcassets in Resources */,
+				614F6F502D88B848007D3751 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614F6F512D88B848007D3751 /* ContentView.swift in Sources */,
+				614F6F522D88B848007D3751 /* LocationAndPlaceLookupApp.swift in Sources */,
+				614F6F572D88C29B007D3751 /* PlaceLookupView.swift in Sources */,
+				614F6F542D88B868007D3751 /* LocationManager.swift in Sources */,
+				614F6F5B2D88C889007D3751 /* PlaceLookupViewModel.swift in Sources */,
+				614F6F592D88C5F3007D3751 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +296,10 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires acces to the device's location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +326,10 @@
 				DEVELOPMENT_TEAM = 4FXJ5W7FM5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires acces to the device's location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
