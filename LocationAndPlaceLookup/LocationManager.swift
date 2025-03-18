@@ -20,6 +20,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
     var authorizationStatus: CLAuthorizationStatus = .notDetermined
     var errorMessage: String?
+    var locationUpdated: ((CLLocation) -> Void)? // This is a function that can be called, passing in a location
     
     override init() {
         super.init()
@@ -49,8 +50,11 @@ extension LocationManager {
         
         location = newLocation
         
+        // Call the callback function to indicate we've updated a location
+        locationUpdated?(newLocation)
+        
         // You can uncomment this when you only want to get the location once, not repeatedly
-//        manager.stopUpdatingLocation()
+        manager.stopUpdatingLocation()
     }
 
     
